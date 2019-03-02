@@ -1,30 +1,25 @@
-﻿# The script of the game goes in this file.
+﻿define m = Character('Me', color="#128412")
+define p = Character('Professor-senpai', color="#110eed")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define m = Character('Me', color="#c8ffc8")
-define p = Character('Professor', color="#c8ffc8")
-
-define j = Character('Alice', color="#110eed")
-define n = Character('Angel', color="#c8ffc8")
-define n = Character('Girimekhala', color="#D16587")
+define al = Character('Alice', color="#d16587")
+define an = Character('Angel', color="#d16587")
+define g = Character('Girimekhala', color="#d16587")
 define j = Character('Jack Frost', color="#110eed")
-define n = Character('Moh Shuvuu', color="#c8ffc8")
-define n = Character('Oni', color="#D16587")
-define j = Character('Pixie', color="#110eed")
-define n = Character('Setanta', color="#c8ffc8")
-define n = Character('Terminator', color="#D16587")
-define n = Character('Titania', color="#D16587")
+define mo = Character('Moh Shuvuu', color="#d16587")
+define o = Character('Oni', color="#d16587")
+define pi = Character('Pixie', color="#d16587")
+define s = Character('Setanta', color="#d16587")
+define te = Character('Terminator', color="#d16587")
+define ti = Character('Titania', color="#d16587")
 
 label start:
     play music "school.mp3"
     scene bg meadow
     m "It's finals seasons oof"
-    m "Fortunately I already aced my Calc 4 and Algorithms exams!"
+    m "Fortunately I already aced my Calc 4 exam and cured cancer!"
     m "Easy peasy cuz r/IAmVerySmart"
-    m "Today's exam is my last final but also my weakest subject"
-    m "How To Be Friendly or Likeable 101"
+    m "Today's exam is my last final but also my worst subject"
+    m "How To Be Nice 101"
 
     menu:
         m "Guess I'm gonna..."
@@ -53,16 +48,22 @@ label notChaos:
 
 label notNeutral:
     scene bg lecturehall
-    m "I somehow impossibly made it! Now I can bomb the final"
-    p "You may begin the test!"
+    m "I somehow impossibly made it!"
+    m "Now I can bomb the final once Professor-senpai says-"
+    "*gunshots*"
+    p "YOU MAY BEGIN THE TEST!"
+    m "Oh"
     m "Let's see, first question"
 
     menu:
-        "1) Which is the friendlier, more likeable subreddit?"
+        "1) Which is the friendlier, more likeable sub?"
         "r/Persona5. I love cumming on Joker figurines":
             stop music
             scene bg blacked
             "A mysterious force killed you"
+            "..."
+            "Just kidding"
+            "Professor-senpai strangled you to death"
             "Pathetic End"
             return
 
@@ -76,7 +77,7 @@ label chaos:
     play music "date.mp3"
     scene bg chaos
     m "..."
-    m "What dafuq just happened"
+    m "What dafuq just happened?"
     m "Am I up King Lucifer's asshole?"
     "Three unidentifiable Lovecraftian horrors appear before you!"
     scene unidentified chaos
@@ -85,7 +86,7 @@ label chaos:
     m "...and reject gods of course"
 
     menu:
-        "Which one will you approach first?"
+        "Which one will you approach?"
         "left Lovecraftian horror":
             jump oni
         "middle Lovecraftian horror":
@@ -99,7 +100,7 @@ label neutral:
     play music "date.mp3"
     scene bg neutral
     m "..."
-    m "oof what happened"
+    m "Oof how did I get here?"
     m "Well there certainly aren't any opposite gender bathrooms here"
     "Three unidentifiable blue blobs appear before you!"
     scene unidentified neutral
@@ -107,7 +108,7 @@ label neutral:
     "...not actually. You're just a pervert"
 
     menu:
-        "Which one will you approach first?"
+        "Which one will you approach?"
         "left blue blob":
             jump pixie
         "middle blue blob":
@@ -121,7 +122,7 @@ label law:
     play music "date.mp3"
     scene bg law
     m "..."
-    m "How did I arrive here?"
+    m "Where am I?"
     m "Is this up Lord YHVH's one of infinite nostrils?"
     "Three unidentifiable heavenly figures appear before you!"
     scene unidentified law
@@ -129,7 +130,7 @@ label law:
     m "Holy moly, I want to lick their fingers and praise YHVH"
 
     menu:
-        "Which one will you approach first?"
+        "Which one will you approach?"
         "left heavenly figure":
             jump angel
         "middle heavenly figure":
@@ -137,4 +138,52 @@ label law:
         "right heavenly figure":
             jump mohShuvuu
 
+    return
+
+label oni:
+    scene bg chaos
+    show demon oni
+    o "FUCK OFF!"
+    
+    menu:
+        "What will you do?"
+        "Scram away":
+            jump oniBad
+        
+        "NO YOU FUCK OFF!":
+            o "Ah that's more like it!"
+            o "Rule is by the strong!"
+            o "..."
+            o "...I'm actually a little tsundere ya know"
+            o "...my kokoro is very different from my brutish appearance..."
+            o "kya~"
+            menu:
+                o "Can't you tell by my Japanese schoolgirl-inspired outfit?"
+                "So you're a crossdressing weeb pervert":
+                    o "YES JUST LIKE THAT! I LIKE RUDE!"
+                    o "My heart is going crazy doki doki around you..."
+                    o "I've decided!"
+                    o "You are to be my new kawaii sweetheart~"
+                    o "cuz the last one didn't last long ;)"
+                    "..."
+                    "Onii-chan later spanked you so hard"
+                    "with power, just the way you wanted"
+                    o "*exhales deeply*"
+                    o "Okay let's grab some burgers, my treat <3"
+                    hide demon oni
+                    show good oni
+                    "Congrats! You got Onii-chan Good End!"
+                    return
+                "Of course Onii-chan! You look kawaii af":
+                    o "YOU LIE!"
+                    jump oniBad
+
+label oniBad:
+    o ":'("
+    stop music
+    "You made Oni sad"
+    scene bg blacked
+    "Oni ran away in tears"
+    "The other demons retaliated and feasted on your innards"
+    "Oni Bad End"
     return

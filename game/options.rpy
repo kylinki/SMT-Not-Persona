@@ -151,6 +151,8 @@ define config.save_directory = "NotPersonaSMT-1551468035"
 
 define config.window_icon = "gui/window_icon.png"
 
+define gui.choice_button_text_idle_color = '#128412'
+
 
 ## Build configuration #########################################################
 ##
