@@ -16,7 +16,7 @@ label start:
     play music "school.mp3"
     scene bg meadow
     m "It's finals seasons oof"
-    m "Fortunately I already aced my Calc 4 exam and cured cancer!"
+    m "Fortunately I already aced my Calc 4 and Algorithms exams!"
     m "Easy peasy cuz r/IAmVerySmart"
     m "Today's exam is my last final but also my worst subject"
     m "How To Be Nice 101"
@@ -34,7 +34,7 @@ label start:
 label notChaos:
     scene bg uni
     m "The exam starts in literally 3 seconds, uh oh"
-    m "...I shouldn't have bought Persona 5 Racing right beforehand" 
+    m "...I shouldn't have bought Persona 5 Racing right beforehand!" 
 
     menu:
         m "Guess I'll..."
@@ -51,7 +51,7 @@ label notNeutral:
     m "I somehow impossibly made it!"
     m "Now I can bomb the final once Professor-senpai says-"
     "*gunshots*"
-    p "YOU MAY BEGIN THE TEST!"
+    p "YOU MAY BEGIN!"
     m "Oh"
     m "Let's see, first question"
 
@@ -82,7 +82,7 @@ label chaos:
     "Three unidentifiable Lovecraftian horrors appear before you!"
     scene unidentified chaos
     "They all emit a powerful aura"
-    m "Hot, I want them to spank me so hard!"
+    m "Hot, I want them to spank me hard!"
     m "...and reject gods of course"
 
     menu:
@@ -148,6 +148,7 @@ label oni:
     menu:
         "What will you do?"
         "Scram away":
+            o "Nooooo I didn't actually mean it!"
             jump oniBad
         
         "NO YOU FUCK OFF!":
@@ -174,8 +175,9 @@ label oni:
                     show good oni
                     "Congrats! You got Onii-chan Good End!"
                     return
-                "Of course Onii-chan! You look kawaii af":
-                    o "YOU LIE!"
+                "Of course Onii-chan! You look kawaii as fuck":
+                    o "URUSAI! URUSAI! URUSAI!"
+                    o "I'M NOT INTO THAT LOVEY DOVEY SWEET TALK SHIT!"
                     jump oniBad
 
 label oniBad:
@@ -184,6 +186,6 @@ label oniBad:
     "You made Oni sad"
     scene bg blacked
     "Oni ran away in tears"
-    "The other demons retaliated and feasted on your innards"
+    "The other demons blood orgy'd with your innards"
     "Oni Bad End"
     return
