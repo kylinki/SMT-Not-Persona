@@ -25,7 +25,7 @@ label start:
         m "Guess I'm gonna..."
         "try my best!":
             jump notChaos
-        "ditch it. This is a stupid, useless class":
+        "ditch it. What a stupid, useless class":
             stop music
             scene bg blacked
             "You blacked out!"
@@ -379,7 +379,7 @@ label pixieBad:
 label titania:
     scene bg neutral
     show demon titania
-    ti "*La la la.. La la..."
+    ti "La la la.. La la..."
     ti "How truly beautiful am I, queen of the fairies?"
     ti "It's such a great honor to be queen that it almost brings me to tears..."
     ti "...Hey you!"
@@ -412,9 +412,13 @@ label titania:
                     ti "But first, let's get freaky"
                     m "Excite...I'm so depraved"
                     ti "I'm gonna ram my Sugar Key so far up your ass...La la..."
-                    "Hours later"
+                    scene bg blacked
+                    "Hours later..."
+                    "(Demons are different from humans, ya know?)"
+                    scene bg neutral
+                    show demon titania
                     ti "Thank you, used cloth. I've filled you up with 2 years worth"
-                    m "My lady, your Sugar Key is out of this world"
+                    m "My lady, your Sugar Key is beyond out of this world!"
                     ti "Thank you, not even Oberon can take it"
                     ti "...Hmm"
                     ti "I think I'll just leave him for you instead"
@@ -616,6 +620,76 @@ label terminatorBad:
     scene bg blacked
     stop music
     te "Hasta la vista, baby <3"
+    jump lawBad
+
+label mohShuvuu:
+    scene bg law
+    show demon mohshuvuu
+    mo "Hey there~ <3"
+    "You feel uncomfortable, this is a lil girl"
+    mo "Oh no need to be shy, I'm actually hundreds of years old~ <3"
+    m "*glances around*"
+    mo "And YHVH wouldn't have police up his nostrils"
+    mo "*giggle*"
+    menu:
+        mo "What does love mean for you?"
+        "Cuddling and spooning":
+            mo "Yaaay same for me!"
+            m "Let's try that out, can we? :D"
+            mo "Kill two birds with one stone ;)"
+            "Moh Shuvuu put her arms around you"
+            mo "I'll be big spoon~ <3"
+            jump mohBad
+        "Lol I wouldn't know":
+            mo "Of course, who'd date your lame innards ass-?"
+            m "Love can't be described"
+            mo "What?"
+            m "Some people like to eat ass, that's love"
+            m "Others like to gangbang, that's also love"
+            "Moh Shuvuu gives a disgusted look"
+            mo "No wonder why YHVH abandoned you filthy humans"
+            m "But it's the feeling! The deep interpersonal connections you get!"
+            mo "Sounds gross and stupid but prove me wrong"
+            menu:
+                "What will you do?"
+                "Give her your PS2":
+                    mo "Dafuq is this"
+                    m "It's called a PlayStation 2"
+                    m "Cool people play games like Nocturne or Digital Devil Saga on it"
+                    mo "Sure..."
+                    m "Others also play Devil Summoner Raidou Kuzunoha on it"
+                    mo "Kuzunoha...Raidou..?"
+                    "You hand her over a copy of Raidou"
+                    mo "He looks so...cool and dreamy"
+                    mo "Just looking at him...makes me feel..."
+                    mo "Warm inside...like hot coco"
+                    m "You're supposed to play it too silly bean!"
+                    mo "I will for sure! Thank you so much mister! <3"
+                    mo "*gives you a hug*"
+                    hide demon mohshuvuu
+                    show good mohshuvuu
+                    "Congrats! Your innards romanced Moh Shuvuu!"
+                    return
+
+                "Give her your PS4":
+                    mo "Dafuq am I supposed to do with this?"
+                    m "Umm play Fortnite and Persona 5?"
+                    jump mohBad
+
+
+label mohBad:
+    "*CRACK!*"
+    "Moh Shuvuu cracked your skull!"
+    "*SLURP!*"
+    "Moh Shuvuu sucked your brain out!"
+    mo "Mhmm tasty-"
+    mo "*coughs* *gags*"
+    mo "Dafuq is this!?!"
+    mo '*COUGHS!* *GAGS!* *SEIZURES!*'
+    "Your brain tumor food poisoned Moh Shuvuu..."
+    scene bg blacked
+    stop music
+    "Moh Shuvuu immediately got sent to loli hospital..."
     jump lawBad
 
 label lawBad:
