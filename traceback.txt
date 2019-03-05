@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 390, in script
+    jump titaniaBad
+ScriptError: could not find label 'titaniaBad'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 390, in script
+    jump titaniaBad
+  File "/Users/kevinlu/Projects/Visual Novels/renpy-7.1.3-sdk/renpy/ast.py", line 1633, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Users/kevinlu/Projects/Visual Novels/renpy-7.1.3-sdk/renpy/script.py", line 875, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'titaniaBad'.
+
+Darwin-17.7.0-x86_64-i386-64bit
+Ren'Py 7.1.3.1092
+Not Persona SM(u)T 
+Mon Mar  4 21:30:42 2019

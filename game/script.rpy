@@ -19,7 +19,7 @@ label start:
     m "Luckily I already aced my Algorithms and Data Structures exams!"
     m "Easy peasy cuz r/IAmVerySmart"
     m "Today's exam is my last final but also my worst subject"
-    m "How To Be Nice 101"
+    m "How To Be A Decent Human Being 101"
 
     menu:
         m "Guess I'm gonna..."
@@ -125,17 +125,17 @@ label law:
     m "Where am I?"
     m "Is this up Lord YHVH's one of infinite nostrils?"
     scene unidentified law
-    "Three unidentifiable heavenly figures appear before you!"
+    "Three unidentifiable heavenly beings appear before you!"
     "They all emit a peaceful aura"
     m "Holy moly, I want to lick their fingers and praise YHVH"
 
     menu:
         "Which one will you approach?"
-        "left heavenly figure":
+        "left heavenly being":
             jump angel
-        "middle heavenly figure":
+        "middle heavenly being":
             jump terminator
-        "right heavenly figure":
+        "right heavenly being":
             jump mohShuvuu
 
     return
@@ -157,7 +157,7 @@ label oni:
             o "..."
             o "...I'm actually a little tsundere ya know"
             o "...my kokoro is very different from my brutish appearance..."
-            o "kya~"
+            o "NYAA~"
             menu:
                 o "Can't you tell by my Japanese schoolgirl-inspired outfit?"
                 "So you're a crossdressing weeb pervert":
@@ -220,24 +220,29 @@ label girimekhala:
                     m "Maybe like a speck of sand ahehe..."
                     jump giriBad
                 "It breathes fire":
-                    g "Kay kid, I know you're bullshitting"
-                    g "Perhaps I'll Mamudoon just to see you squeal and dance again ;)"
-                    m "No wait, Giri. Let's do something else"
-                    g "Oooh?"
-                    m "Like..."
-                    m "Let's go somewhere Arkansas and start a bar brawl"
-                    m "It'll be especially fun with all the inbred rednecks"
-                    g "Mhmm"
-                    m "Then I go to kiss you!"
+                    g "Jelly"
+                    g "I wish mine could Agidyne mice and hamsters"
+                    g "Just think of all the delicious hamster kebobs I'd eat!"
+                    g "Cuz fuck rats"
+                    m "..."
+                    "Better change topic quick before Giri realizes you're bullshitting"
+                    m "*blush*"
+                    g "...What's up? Something on your mind?"
+                    m "Hmm uhhhh"
+                    m "I'd like to kiss you"
                     g "!!-"
-                    m "Then I publicly suck your trunk or something..."
-                    m "They'll be so shocked at our gay furry making out shit"
+                    m "And give you a trunkjob"
                     g "...Freak"
-                    g "...It isn't shit"
-                    m "It is gay furry making out tho"
-                    g "True dat. I don't mind it"
-                    m "So off we go?"
-                    g "Free trunkjobs for me, just do it every 5 minutes kay? <3"
+                    g "You into gay furry shit"
+                    m "Damn right I am"
+                    g "Kay just checking"
+                    m "I just want to be your personal sex slave bruh"
+                    g "!!!!"
+                    "Giri's trunk went stiff!"
+                    g "Those were the most beautiful words I've ever heard!"
+                    m "Damn right Daddy Dumbo"
+                    "And that's how Dumbo sequel got made"
+                    "Featuring Dante from the Devil May Cry Series"
                     hide demon girimekhala
                     show good girimekhala
                     "Congrats! Your innards romanced Girimekhala!"
@@ -251,9 +256,74 @@ label giriBad:
     "Girimekhala strolled away..."
     jump chaosBad
 
+label alice:
+    scene bg chaos
+    show demon alice
+    al "*giggle*"
+    al "You want to play with me?"
+    menu:
+        "How will you respond?"
+        "Like play SMT Nocturne?":
+            al "You clearly know what I mean :'("
+            m "No lil girl don't cry!"
+            al "Waaaaaaah!!! :'("
+            m "LIL GIRL"
+            m "...YOU MAY SLICE ME UP!"
+            al "*giggle* That's better"
+            al "I wasn't actually crying silly ;)"
+            al "But it's only fun when humans beg for their lives"
+            menu:
+                "How will you respond?"
+                "I am no fun":
+                    al "True you aren't"
+                    m  "...horse bollocks"
+                    al "Oh I know what'd be fun!~"
+                    al "Let's exit Lucifer's asshole"
+                    al "And make use of our second amendment rights~! <3"
+                    m "What-"
+                    al "We'll shoot up all the Persona 4 and 5 characters"
+                    al "It'll be so wicked fun yaay~"
+                    m "You a crazy, psycho loli"
+                    menu:
+                        "What will you do?"
+                        "Stop her and save everyone":
+                            al "HAHAHAHAHA!"
+                            al "You adorable human~"
+                            jump aliceBad
+                        "I'll just watch you, like mukbang":
+                            al "Fine by me"
+                            al "*light giggle*"
+                            al "AHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAHAHAHAAHA\
+                            AHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAHAHAHAAHA\
+                            AHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAHAHAHAAHA\
+                            AHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHA!!!!!!!<3"
+                            m "Sure"
+                            m "Uhhh just smoke meth instead instead"
+                            hide demon alice
+                            show good alice
+                            "Congrats! Your innards romanced Alice!"
+                            return
+
+                "...Please don't kill me?":
+                    al "Yaaay! Just like that~!"
+                    jump aliceBad
+
+        "Short, little girls are sooooo cute!":
+            m "Only in the teddy bear kinda way of course"
+            al "I'm not your fucking teddy bear"
+            al "You're ugly and look like an incel"
+            jump aliceBad
+
+label aliceBad:
+    al "Die for me!"
+    scene bg blacked
+    stop music
+    "Alice knifed you to shreds..."
+    jump chaosBad
+
 label chaosBad:
     "The other demons skull fucked and blood orgy'd your innards"
-    "Chaos - Bad End"
+    "One more noob rejected! Chaos - Bad End"
     return
 
 label pixie:
@@ -306,6 +376,63 @@ label pixieBad:
     "Pixie fluttered away..."
     jump neutralBad
 
+label titania:
+    scene bg neutral
+    show demon titania
+    ti "*La la la.. La la..."
+    ti "How truly beautiful am I, queen of the fairies?"
+    ti "It's such a great honor to be queen that it almost brings me to tears..."
+    ti "...Hey you!"
+    m "M-me?"
+    menu:
+        ti "Are you ready?"
+        "I am damn ready":
+            m "For Persona 5 port on Switch!"
+            "Titania gave a disgusted look"
+            "The mood is awkward..."
+            ti "More like Persona 5 Time to Stop"
+            jump titaniaBad
+
+        "My body is ready!":
+            ti "Fantastisch!"
+            "Titania lifts up her skirt to reveal something HUGE"
+            ti "You can do wonders with fairy magic, you know? ;)"
+            m "*gulp*"
+            menu:
+                ti "May I test it on you?"
+                "Hell no":
+                    ti "That is too bad"
+                    jump titaniaBad
+                "I just want to find some opposite gender's bathrooms":
+                    m "Then you may get freaky with me there"
+                    ti "There are none. This lake is the only bathroom for all"
+                    m "Well shite"
+                    ti "You may peeping tom all you'd like, we demons don't care"
+                    m ":D"
+                    ti "But first, let's get freaky"
+                    m "Excite...I'm so depraved"
+                    ti "I'm gonna ram my Sugar Key so far up your ass...La la..."
+                    "Hours later"
+                    ti "Thank you, used cloth. I've filled you up with 2 years worth"
+                    m "My lady, your Sugar Key is out of this world"
+                    ti "Thank you, not even Oberon can take it"
+                    ti "...Hmm"
+                    ti "I think I'll just leave him for you instead"
+                    ti "You're my bitch now"
+                    m "Funnnn"
+                    hide demon titania
+                    show good titania
+                    "Congrats! Your innards romanced Titania!"
+                    return
+
+label titaniaBad:
+    m "..."
+    ti "Looks like our tea time is up"
+    ti "I must return before my husband realizes I'm cheating"
+    scene bg blacked
+    stop music
+    "Titania twirled away..."
+    jump neutralBad
 
 label setanta:
     scene bg neutral
@@ -370,7 +497,7 @@ label setantaBad:
 
 label neutralBad:
     "The other demons roast marshmallow'd your innards"
-    "Neutral - Bad End"
+    "Your innards cut its own throat! Neutral - Bad End"
     return
 
 label angel:
@@ -380,12 +507,13 @@ label angel:
     m "I want to lick your fingers"
     an "Ahhh so your innards want to romance me!"
     an "If so, what are you going to do with me?"
-    an "aside from finger-licking"
     menu:
         "How will you respond?"
-        "Spoil you with gifts and treat you nicely like the angel you are":
+        "Spoil you with gifts and treats like the angel you are":
             an "That's it?"
-            m "I'll buy you a Nintendo Switch and BotW!"
+            m "I'll buy you a Nintendo Switch"
+            an "*yawn*"
+            m "and Breath of the Wild?"
             jump angelBad
         "I don't do nice. Expect domestic abuse":
             an "Ooooh dangerous, you sound fun"
@@ -395,14 +523,14 @@ label angel:
                     an "ANYTHING UP THE BUTT IS A SIN!"
                     an "ESPECIALLY WHEN IT'S NOT A CHURCH PASTOR'S!"
                     m "Girl you a thot"
-                    an "You lack a pedophile priest's sexpertise"
-                    m "Babe, kids and animals are off limits-"
+                    an "You lack a pedo priest's sexpertise"
+                    m "Babe, I don't do kids or animals-"
                     an "CUZ YOU"
                     jump angelBad
                 "Hell no":
                     an "Ahhh so you know the Lord's words!"
                     m "Sure"
-                    m "Or maybe I want to do something YHVH's into"
+                    m "Or maybe I want to do something YHVH will watch"
                     an "Ooh? Like what?"
                     m "Chain you down and whip you in the church basement"
                     an "Pfft done that"
@@ -459,9 +587,11 @@ label terminator:
                     scene bg blacked
                     show demon terminator
                     "..."
+                    "What feels like an eternity passes..."
                     scene bg law
                     show demon terminator
-                    te "Here we are 3 seconds into the future"
+                    te "Here we are"
+                    te "0.5 seconds into the future"
                     te "You may lick my sexy fingers now"
                     m "*licks*"
                     "Tastes of sweat and badass"
@@ -492,6 +622,3 @@ label lawBad:
     "The other demons donated your innards to hungry orphans"
     "Praise YHVH! Law - Bad End"
     return
-
-
-
