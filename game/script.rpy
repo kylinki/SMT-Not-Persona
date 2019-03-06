@@ -53,25 +53,56 @@ label notNeutral:
     "*gunshots*"
     p "YOU MAY BEGIN!"
     m "Oh"
-    m "Let's see, first question"
+    m "Let's see, first question..."
 
-    menu:
-        "1) Which is the friendlier, more likeable sub?"
-        "r/Persona5. I love cumming on Joker figurines":
-            stop music
-            scene bg blacked
-            "A mysterious force killed you"
-            "..."
-            "Just kidding"
-            "Professor-senpai strangled you to death"
-            "Pathetic End"
-            return
+    if persistent.aliceGood and persistent.angelGood and persistent.girimekhalaGood and persistent.mohShuvuuGood and persistent.oniGood and persistent.pixieGood and persistent.setantaGood and persistent.terminatorGood and persistent.titaniaGood:
 
-        "r/Megaten. I love not cumming on Joker figurines":
-            stop music
-            scene bg blacked
-            "You blacked out!"
-            jump law
+        menu:
+            "1) Which is the friendlier, more likeable sub?"
+            "r/Persona5. I love cumming on Joker figurines":
+                stop music
+                scene bg blacked
+                "A mysterious force killed you"
+                "..."
+                "Just kidding"
+                "Professor-senpai strangled you to death"
+                "Pathetic End"
+                return
+
+            "r/Megaten. I love cumming on Demifiend figurines":
+                stop music
+                scene bg blacked
+                "You blacked out!"
+                jump law
+
+            "Zone out":
+                m "...wish I was home browsing r/CummingOnFigurines now mhmm"
+                "Professor-senpai tapped your shoulder!"
+                p "We need to talk"
+                "Professor-senpai suddenly grabs you!"
+                stop music
+                scene bg blacked
+                "and you teleport!!"
+                jump trueEnd
+
+    else:
+        menu:
+            "1) Which is the friendlier, more likeable sub?"
+            "r/Persona5. I love cumming on Joker figurines":
+                stop music
+                scene bg blacked
+                "A mysterious force killed you"
+                "..."
+                "Just kidding"
+                "Professor-senpai strangled you to death"
+                "Pathetic End"
+                return
+
+            "r/Megaten. I love cumming on Demifiend figurines":
+                stop music
+                scene bg blacked
+                "You blacked out!"
+                jump law
 
 label chaos:
     play music "date.mp3"
@@ -174,6 +205,7 @@ label oni:
                     hide demon oni
                     show good oni
                     "Congrats! Your innards romanced Oni!"
+                    $ persistent.oniGood = True
                     return
                 "Of course Onii-chan! You look kawaii as fuck":
                     o "URUSAI! URUSAI! URUSAI!"
@@ -246,6 +278,7 @@ label girimekhala:
                     hide demon girimekhala
                     show good girimekhala
                     "Congrats! Your innards romanced Girimekhala!"
+                    $ persistent.girimekhalaGood = True
                     return
 
 label giriBad:
@@ -298,10 +331,11 @@ label alice:
                             AHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHAHAHAHAAHA\
                             AHAHAHAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAHAHAHA!!!!!!!<3"
                             m "Sure"
-                            m "Uhhh just smoke meth instead instead"
+                            m "Uhhh just do meth instead"
                             hide demon alice
                             show good alice
                             "Congrats! Your innards romanced Alice!"
+                            $ persistent.aliceGood = True
                             return
 
                 "...Please don't kill me?":
@@ -346,7 +380,11 @@ label pixie:
             pi "I know"
             pi "I get that a lot"
             pi "*giggle*"
-            m "Hey can you cast Megidoloan on this lake?"
+            m "Talk about overconfidence"
+            m "You're the friggin SMT equivalent of caterpie"
+            pi "W-what!?"
+            m "Then..."
+            m "Can you cast Megidoloan on this lake?"
             menu:
                 pi "Sure but um why?"
                 "It's lolz to see you try and fail":
@@ -356,10 +394,14 @@ label pixie:
                     pi "You seem like an honest person"
                     pi "I like that..."
                     m "Yea I'm rich, handsome, and definitely without AIDS"
-                    pi "I'm Pixie the Fairy. I'm sure we'll be the best of friends!"
+                    pi "I'm Pixie the Fairy. I'm sure we'll be the best of friends-"
+                    m "Yadi yada whatever"
+                    m "Waifu fusion fodder"
+                    pi "-_-"
                     hide demon pixie
                     show good pixie
                     "Congrats! Your innards romanced Pixie!"
+                    $ persistent.pixieGood = True
                     return
                 "So we can kill all the perverts in the world":
                     pi "I know you're a pervert yourself, human"
@@ -391,6 +433,7 @@ label titania:
             "Titania gave a disgusted look"
             "The mood is awkward..."
             ti "More like Persona 5 Time to Stop"
+            m "..."
             jump titaniaBad
 
         "My body is ready!":
@@ -402,6 +445,8 @@ label titania:
                 ti "May I test it on you?"
                 "Hell no":
                     ti "That is too bad"
+                    ti "I'll just use Jack Frost instead"
+                    m "...Can I watch"
                     jump titaniaBad
                 "I just want to find some opposite gender's bathrooms":
                     m "Then you may get freaky with me there"
@@ -422,15 +467,16 @@ label titania:
                     ti "Thank you, not even Oberon can take it"
                     ti "...Hmm"
                     ti "I think I'll just leave him for you instead"
-                    ti "You're my bitch now"
+                    ti "You're my used cloth bitch now"
                     m "Funnnn"
                     hide demon titania
                     show good titania
                     "Congrats! Your innards romanced Titania!"
+                    $ persistent.titaniaGood = True
                     return
 
 label titaniaBad:
-    m "..."
+    ti "Pfft"
     ti "Looks like our tea time is up"
     ti "I must return before my husband realizes I'm cheating"
     scene bg blacked
@@ -465,14 +511,17 @@ label setanta:
                     s "Ehh?!"
                     m "I watch your vids with her"
                     s "EHHH!?!"
-                    m "Don't worry, she says she's proud of you"
+                    m "Don't worry, she's proud of what she taught you"
                     s "*blushes*"
                     m "Here's a life stone and some macca"
-                    m "Let's PS4 then Netflix and chill okay?"
+                    m "T-thanks-"
+                    m "and a SMT V release date"
                     s "*BLUSH INTENSIFIES!*"
+                    m "OF NEVER!"
                     hide demon setanta
                     show good setanta
                     "Congrats! Your innards romanced Setanta!"
+                    $ persistent.setantaGood = True
                     return
 
         "Spill it, boy toy":
@@ -534,7 +583,7 @@ label angel:
                 "Hell no":
                     an "Ahhh so you know the Lord's words!"
                     m "Sure"
-                    m "Or maybe I want to do something YHVH will watch"
+                    m "Or maybe I want to do something YHVH would watch"
                     an "Ooh? Like what?"
                     m "Chain you down and whip you in the church basement"
                     an "Pfft done that"
@@ -543,10 +592,12 @@ label angel:
                     m "...Just kidding!"
                     m "It's Sunday and Bible study is in place-"
                     an "Even better~"
+                    m "W-What"
                     an "Let me show you whan an angel can do <3"
                     hide demon angel
                     show good angel
                     "Congrats! Your innards romanced Angel!"
+                    $ persistent.angelGood = True
                     return
 
 
@@ -579,19 +630,19 @@ label terminator:
                     m "For once a demon's not into me just for my innards"
                     te "..."
                     te "Here, hold this"
-                    "Terminator hands you a Persona high schooler's innards"
+                    "Terminator hands you a Persona 4 high schooler's innards"
                     m "!!"
                     "There's a ring and love letter underneath!"
                     "The letter reads"
                     "'Let us elope away into the future'"
                     "'We can make beautiful babies then'"
-                    "'They'll look likie Jimenez or Demifiend"
+                    "'They'll look like Jimenez or Demifiend'"
                     m "Aww give me your babies!"
                     "Terminator suddenly grabs you and you teleport!"
                     scene bg blacked
                     show demon terminator
                     "..."
-                    "What feels like an eternity passes..."
+                    "What feels like an eternity eventually passes..."
                     scene bg law
                     show demon terminator
                     te "Here we are"
@@ -603,6 +654,7 @@ label terminator:
                     hide demon terminator
                     show good terminator
                     "Congrats! Your innards romanced Terminator!"
+                    $ persistent.terminatorGood = True
                     return
                 "You forgot to say 'please'":
                     te "Fuck you, asshole"
@@ -614,7 +666,7 @@ label terminator:
 label terminatorBad:
     "*BOOM!*"
     "Terminator shotgun'd your face!"
-    "with style of course ;)"
+    "with Smokin' Sexy Style!! ;)"
     "Terminator romantically picks out your innards"
     "and throws them out the window"
     scene bg blacked
@@ -645,8 +697,8 @@ label mohShuvuu:
             m "Love can't be described"
             mo "What?"
             m "Some people like to eat ass, that's love"
-            m "Others like to gangbang, that's also love"
-            "Moh Shuvuu gives a disgusted look"
+            m "Others like to gangbang at funerals, that's also love"
+            "Moh Shuvuu gives you a disgusted look"
             mo "No wonder why YHVH abandoned you filthy humans"
             m "But it's the feeling! The deep interpersonal connections you get!"
             mo "Sounds gross and stupid but prove me wrong"
@@ -663,12 +715,19 @@ label mohShuvuu:
                     mo "He looks so...cool and dreamy"
                     mo "Just looking at him...makes me feel..."
                     mo "Warm inside...like hot coco"
-                    m "You're supposed to play it too silly bean!"
-                    mo "I will for sure! Thank you so much mister! <3"
+                    m "Little bird chick, he's like your husbando"
+                    m "There's no Platinum Games remake of it...yet"
+                    m "But I hope you enjoy it anyway! *gentlemanly bows*"
+                    mo "Awww I love it! Thank you so much mister! <3"
                     mo "*gives you a hug*"
+                    m ":D"
+                    mo "I can't wait to draw Raidou X Demifiend yaoi"
+                    m "...fujoshi chick"
+                    mo "with you DP'd! <3"
                     hide demon mohshuvuu
                     show good mohshuvuu
                     "Congrats! Your innards romanced Moh Shuvuu!"
+                    $ persistent.mohShuvuuGood = True
                     return
 
                 "Give her your PS4":
@@ -695,4 +754,41 @@ label mohBad:
 label lawBad:
     "The other demons donated your innards to hungry orphans"
     "Praise YHVH! Law - Bad End"
+    return
+
+label trueEnd:
+    scene bg true
+    m "...This ain't school"
+    m "Where am I?"
+    "Professor-senpai stands before you"
+    p "As you can perhaps tell, I am no human"
+    m "*shivers*"
+    m "Brrr is it cold here"
+    p "Now I shall reveal my true form"
+    show demon jackfrost
+    m "My love!!"
+    play music "love.mp3"
+    j "All the demons your innards romanced, along with YHVH and Lucifer..."
+    j "I am special fused from that love, Ho!"
+    m "*blush* Jack called me a ho~ *feels good*"
+    j "Hee ho! I am Jack Frost Almighty!"
+    j "All bends to my will!"
+    hide demon mohshuvuu
+    show good jackfrost
+    m "Jack..."
+    m "You are the sexiest demon my innards have ever laid eyes on"
+    m "...Is there a figurine of you? *indecent thoughts*"
+    j "No, Ho!"
+    m "Well shite"
+    j "Worry not, Ho!"
+    j "I got something better for you!"
+    "Jack Frost Almighty is transforming!-"
+    hide good jackfrost
+    show true
+    m "!!-"
+    j "Hee Ho!"
+    "Congrats! Your innards got SMT V!"
+    m "..."
+    "You forgot your Switch at home"
+    "TRUE END"
     return

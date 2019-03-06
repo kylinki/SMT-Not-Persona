@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Not Persona SM(u)T")
+define config.name = _("SM(u)T, Not Persona")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "Kylin Lu"
+#define config.version = "Kylin Lu"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
