@@ -787,9 +787,8 @@ label trueEnd:
     hide good jackfrost
     show true
     m "!!-"
-    j "Hee Ho!"
     "Congrats! Your innards got SMT V!"
     m ":D :D :D :D :D :D"
-    "You haven't realized yet you left your Switch at home"
+    "You haven't realized yet you left your Switch home"
     "TRUE END! <3"
     return
