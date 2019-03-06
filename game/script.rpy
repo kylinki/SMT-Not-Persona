@@ -773,7 +773,7 @@ label trueEnd:
     m "*blush* Jack called me a ho~ *feels good*"
     j "Hee ho! I am Jack Frost Almighty!"
     j "All bends to my will!"
-    hide demon mohshuvuu
+    hide demon jackfrost
     show good jackfrost
     m "Jack..."
     m "You are the sexiest demon my innards have ever laid eyes on"
@@ -788,7 +788,7 @@ label trueEnd:
     m "!!-"
     j "Hee Ho!"
     "Congrats! Your innards got SMT V!"
-    m "..."
-    "You forgot your Switch at home"
-    "TRUE END"
+    m ":D :D :D :D :D :D"
+    "You haven't realized yet you left your Switch at home"
+    "TRUE END! <3"
     return
