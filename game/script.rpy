@@ -764,7 +764,7 @@ label trueEnd:
     p "As you can perhaps tell, I am no human"
     m "*shivers*"
     m "Brrr is it cold here"
-    p "Now I shall reveal my true form"
+    p "Now I shall reveal to you my true form..."
     show demon jackfrost
     m "My love!!"
     play music "love.mp3"
@@ -776,7 +776,8 @@ label trueEnd:
     hide demon jackfrost
     show good jackfrost
     m "Jack..."
-    m "You are the sexiest demon my innards have ever laid eyes on"
+    m "You are the sexiest motherfucker demon my innards have ever laid eyes on"
+    j "Your mother, yep. Father too"
     m "...Is there a figurine of you? *indecent thoughts*"
     j "No, Ho!"
     m "Well shite"
